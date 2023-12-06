@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #FAE8E9; 
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 1rem;
+    background: url('/Users/nadi/Desktop/Sem2/WEB/Test5/XYZ/images/banner3.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    color: white;
+    position: relative;
+}
+
+header h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    background-color: #FABBCB; 
+    color: white;
+    padding: 20px; 
+}
+
+nav a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 10px 0; 
+}
+
+.flex-container {
+    display: flex;
+    flex-grow: 1;
+}
+
+nav {
+    flex: 1; 
+}
+main {
+    flex: 7; 
+    padding: 1rem;
+    background-color: #FFF0F5; 
+}
+aside {
+    flex: 2; 
+    background-color: #F4F4F4; 
+    padding: 1rem;
+}
+
+footer {
+    background-color: #FABBCB;
+    color: white;
+    padding: 1rem;
+    position: static;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    nav, main, aside {
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+aside {
+    flex: 2; 
+    background-color: #F4F4F4; 
+    padding: 1rem;
+}
+
+footer {
+    background-color: #FABBCB; 
+    color: white;
+    padding: 1rem;
+    position: static;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    nav, main, aside {
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    footer {
+        position: static;
+    }
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=email], select {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit], input[type=reset] {
+    width: 100%;
+    background-color: #FFC0CB;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #FFB6C1; 
+}
+
+p, li, h2 {
+    line-height: 1.6; 
+}
+
+.photo-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 1rem; 
+}
+
+.photo-container img {
+    width: 100%;
+    height: auto; 
+    display: block;
+}
+

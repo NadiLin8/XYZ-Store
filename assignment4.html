@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Merriweather&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Member Registration - XYZ Store</title>
+</head>
+<body>
+    <header>
+        <h1>XYZ Store - Member Registration</h1>
+    </header>
+    <div class="flex-container"> 
+        <nav> 
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="product.html">Product</a>
+            <a href="services.html">Services</a>
+            <a href="assignment4.html">Registration</a>
+        </nav>
+        <main> 
+            <form id="registrationForm" onsubmit="return validateForm()">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required><br><br>
+
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required><br><br>
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required><br><br>
+
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required><br><br>
+
+                <label for="postalCode">Postal Code (e.g., A0A 0A0):</label>
+                <input type="text" id="postalCode" name="postalCode" required pattern="[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d"><br><br>
+
+                <label for="province">Province:</label>
+                <select id="province" name="province" required>
+                    <option value="">Select...</option>
+                    <option value="QC">QC</option>
+                    <option value="ON">ON</option>
+                    <option value="MN">MN</option>
+                    <option value="SK">SK</option>
+                    <option value="AB">AB</option>
+                    <option value="BC">BC</option>
+                </select><br><br>
+
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required min="18"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"><br><br>
+
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required><br><br>
+
+                <input type="submit" value="Register Now">
+                <input type="reset" value="Clear Form">
+            </form>
+        </main>
+        <aside> 
+            
+        </aside>
+    </div> 
+    <footer>
+        <small>&copy; 2023 XYZ Store</small>
+    </footer>
+    <script src="validation.js"></script>
+</body>
+</html>
