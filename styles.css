@@ -15,7 +15,7 @@ body {
 header {
     text-align: center;
     padding: 1rem;
-    background: url('/Users/nadi/Desktop/Sem2/WEB/Test5/XYZ/images/banner3.jpeg') no-repeat center center;
+    background: url('images/banner.jpeg') no-repeat center center;
     background-size: cover;
     height: 200px;
     color: white;
